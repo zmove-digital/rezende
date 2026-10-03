@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rodrigo Rezende — Blog semanal sobre vida, tecnologia e criatividade</title>
+<meta name="description" content="Blog pessoal de Rodrigo Rezende com um texto novo toda semana sobre vida, tecnologia e criatividade. Leia o post mais recente, conheça a história do autor e siga nas redes sociais.">
+<meta name="author" content="Rodrigo Rezende">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#100e13" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Rodrigo Rezende — Blog semanal">
+<meta property="og:description" content="Um texto novo toda semana sobre vida, tecnologia e criatividade.">
+<meta property="og:image" content="assets/rodrigo-rezende.jpg">
+<meta property="og:url" content="./">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="./">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="assets/rodrigo-rezende.jpg" imagesrcset="assets/rodrigo-rezende.webp" imagesizes="(max-width: 900px) 90vw, 420px" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('tema');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="shell">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="assets/favicon.svg" alt="" width="34" height="34">
+      <span class="brand-text">Rodrigo Rezende<small>Blog semanal</small></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <a class="nav-link" href="#sobre">Sobre</a>
+      <a class="nav-link" href="#posts" aria-current="page">Posts</a>
+      <a class="nav-link" href="#contato">Contato</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro e escuro" title="Alternar tema">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.5 14.3A8.5 8.5 0 0 1 9.7 3.5a8.5 8.5 0 1 0 10.8 10.8Z"/>
+        </svg>
+      </button>
+      <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" id="sobre">
+    <div class="shell hero-grid">
+      <div>
+        <span class="hero-badge reveal">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Novo texto toda semana
+        </span>
+
+        <h1 class="reveal">Olá, eu sou <span class="gradient-text">Rodrigo Rezende</span></h1>
+        <p class="hero-role reveal">Escritor, criador digital e curioso de carteirinha</p>
+
+        <p class="hero-bio reveal">
+          Escrevo sobre as coisas que realmente me fazem pensar: como a tecnologia muda a
+          forma como trabalhamos, como criamos coisas que duram e por que prestamos mais
+          atenção no caminho do que no destino. Sem fórmula pronta, sem pertence —
+          só o que aprendi na prática e quero compartilhar.
+        </p>
+
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#posts">
+            Ler o post mais recente
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h13M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a class="btn btn-ghost" href="#contato">Falar comigo</a>
+        </div>
+
+        <dl class="hero-meta reveal">
+          <div>
+            <dt>Publicados</dt>
+            <dd data-count-posts>3 textos</dd>
+          </div>
+          <div>
+            <dt>Frequência</dt>
+            <dd>Semanal</dd>
+          </div>
+          <div>
+            <dt>Leitura média</dt>
+            <dd>4 minutos</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="avatar-frame">
+          <picture>
+            <source srcset="assets/rodrigo-rezende.webp" type="image/webp">
+            <img src="assets/rodrigo-rezende.jpg" alt="Foto de Rodrigo Rezende" width="600" height="600" fetchpriority="high" decoding="async">
+          </picture>
+        </div>
+
+        <div class="floating-card float-a">
+          <span class="dot" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/>
+            </svg>
+          </span>
+          <span>Um texto novo<small>todo domingo</small></span>
+        </div>
+
+        <div class="floating-card float-b">
+          <span class="dot" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+            </svg>
+          </span>
+          <span>Leitura de 4 min<small>sem enrolação</small></span>
+        </div>
+
+        <div class="social-row">
+          <a class="social-link" href="https://github.com/seuusuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Rodrigo Rezende">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.2c-3.34.72-4.04-1.42-4.04-1.42-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.74.08-.74 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.8 1.31 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.11-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.8 5.66-5.48 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.21.69.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            GitHub
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/in/seuusuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Rodrigo Rezende">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.76-1.95C21.4 8.75 22 11 22 14.1V21h-4v-6.1c0-1.46-.03-3.34-2.1-3.34-2.1 0-2.42 1.6-2.42 3.24V21h-4V9Z"/></svg>
+            LinkedIn
+          </a>
+          <a class="social-link" href="https://www.instagram.com/seuusuario" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Rodrigo Rezende">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+          <a class="social-link" href="mailto:seuemail@exemplo.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3.6 7 8.4 6 8.4-6" stroke-linecap="round"/></svg>
+            E-mail
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="posts">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Arquivo</span>
+          <h2 class="section-title">Textos recentes</h2>
+          <p class="section-lead">
+            Cada post nasce de uma pergunta que ficou na minha cabeça. Se um deles resolver
+            a sua, share com alguém — é assim que o blog cresce.
+          </p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtrar posts por tema">
+          <button class="filter" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter" type="button" data-filter="criatividade" aria-pressed="false">Criatividade</button>
+          <button class="filter" type="button" data-filter="tecnologia" aria-pressed="false">Tecnologia</button>
+          <button class="filter" type="button" data-filter="vida" aria-pressed="false">Vida</button>
+        </div>
+      </div>
+
+      <article class="featured reveal">
+        <div class="featured-media" aria-hidden="true">
+          <span class="quote-mark">&ldquo;</span>
+        </div>
+        <div class="featured-body">
+          <span class="pill">Mais recente</span>
+          <h3><a class="stretch-link" href="posts/comecar-e-o-que-importa.html">Começar é o que importa (e por que quase ninguém começa)</a></h3>
+          <p>
+            A gente adia começar porque quer fazer perfeito. Mas a versão imperfeita
+            de hoje vale mais que a versão perfeita que nunca existiu. Um texto sobre
+            momentum, pequenas doses e o medo silencioso que trava a maioria das pessoas.
+          </p>
+          <div class="post-meta">
+            <time datetime="2026-09-27">27 de setembro de 2026</time>
+            <span>5 min de leitura</span>
+            <span>Criatividade</span>
+          </div>
+          <span class="link-more">
+            Ler o texto completo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h13M12 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </div>
+      </article>
+
+      <div class="posts-grid" id="postsGrid">
+
+        <article class="card reveal" data-tags="criatividade">
+          <div class="tags">
+            <span class="tag">Criatividade</span>
+            <span class="tag">Processo</span>
+          </div>
+          <h3><a class="stretch-link" href="posts/habitos-que-fazem-texto.html">5 hábitos pequenos que escreveram 12 textos meus</a></h3>
+          <p>Nenhum deles exige disciplina de atleta. Todos exigiram que eu parasse de esperar a motivação chegar antes de sentar para escrever.</p>
+          <div class="post-meta">
+            <time datetime="2026-09-20">20 de setembro de 2026</time>
+            <span>4 min</span>
+          </div>
+          <span class="link-more">
+            Ler mais
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h13M12 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </article>
+
+        <article class="card reveal" data-tags="tecnologia">
+          <div class="tags">
+            <span class="tag">Tecnologia</span>
+            <span class="tag">Trabalho</span>
+          </div>
+          <h3><a class="stretch-link" href="posts/ia-no-trabalho-do-cria.html">IA no trabalho de quem cria: onde ajuda e onde atrapalha</a></h3>
+          <p>Testei durante 90 dias. O que mudou de verdade no meu processo, o que foi só hype e o que eu parei de delegar para sempre.</p>
+          <div class="post-meta">
+            <time datetime="2026-09-13">13 de setembro de 2026</time>
+            <span>6 min</span>
+          </div>
+          <span class="link-more">
+            Ler mais
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h13M12 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </article>
+
+        <article class="card reveal" data-tags="vida">
+          <div class="tags">
+            <span class="tag">Vida</span>
+            <span class="tag">Leitura</span>
+          </div>
+          <h3><a class="stretch-link" href="posts/ler-lento-e-viver-mais.html">Ler devagar é o novo lujo</a></h3>
+          <p>Em um mundo de 140 caracteres, reler o mesmo parágrafo três vezes virou um ato de resistência. E está funcionando comigo.</p>
+          <div class="post-meta">
+            <time datetime="2026-09-06">06 de setembro de 2026</time>
+            <span>4 min</span>
+          </div>
+          <span class="link-more">
+            Ler mais
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h13M12 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </article>
+
+      </div>
+
+      <p class="empty-state" id="emptyState">Nenhum texto nesse tema ainda — mas volta domingo, prometo.</p>
+    </div>
+  </section>
+
+  <section class="section" id="contato" style="padding-top:0">
+    <div class="shell">
+      <div class="cta reveal">
+        <span class="eyebrow" style="justify-content:center">Contato</span>
+        <h2>Tem uma ideia para o próximo texto?</h2>
+        <p>
+          Manda uma mensagem. Adoro transformar perguntas que chegam por e-mail em posts,
+          e respondo tudo pessoalmente.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="mailto:seuemail@exemplo.com?subject=Ideia%20para%20o%20blog">
+            Escrever por e-mail
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h13M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/seuusuario" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+        </div>
+        <p class="cta-note">Sem newsletter, sem spam, sem rastreamento. Só texto bom.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <img class="brand-mark" src="assets/favicon.svg" alt="" width="34" height="34">
+          <span class="brand-text">Rodrigo Rezende<small>Blog semanal</small></span>
+        </a>
+        <p class="footer-about">
+          Um texto por semana sobre vida, tecnologia e criatividade. Escrito à mão, publicado com calma.
+        </p>
+      </div>
+      <nav class="footer-nav" aria-label="Navegação do rodapé">
+        <a href="#sobre">Sobre</a>
+        <a href="#posts">Posts</a>
+        <a href="#contato">Contato</a>
+        <a href="posts/comecar-e-o-que-importa.html">Post mais recente</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> Rodrigo Rezende. Todos os direitos reservados.</span>
+      <span>Feito com HTML, CSS e JavaScript. Hospedado no GitHub Pages.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

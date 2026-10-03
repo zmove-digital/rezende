@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IA no trabalho de quem cria — Rodrigo Rezende</title>
+<meta name="description" content="Testei durante 90 dias. O que mudou de verdade no meu processo, o que foi só hype e o que eu parei de delegar para sempre.">
+<meta name="author" content="Rodrigo Rezende">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#100e13" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="IA no trabalho de quem cria: onde ajuda e onde atrapalha">
+<meta property="og:description" content="90 dias de testes: o que mudou de verdade e o que foi só hype.">
+<meta property="og:image" content="../assets/rodrigo-rezende.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('tema');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="shell">
+    <a class="brand" href="../index.html">
+      <img class="brand-mark" src="../assets/favicon.svg" alt="" width="34" height="34">
+      <span class="brand-text">Rodrigo Rezende<small>Blog semanal</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <a class="nav-link" href="../index.html#sobre">Sobre</a>
+      <a class="nav-link" href="../index.html#posts" aria-current="page">Posts</a>
+      <a class="nav-link" href="../index.html#contato">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro e escuro" title="Alternar tema">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.5 14.3A8.5 8.5 0 0 1 9.7 3.5a8.5 8.5 0 1 0 10.8 10.8Z"/>
+        </svg>
+      </button>
+      <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <article>
+    <header class="article-hero shell">
+      <a class="back-link" href="../index.html#posts">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:1em;height:1em" aria-hidden="true">
+          <path d="M19 12H6M12 5l-7 7 7 7"/>
+        </svg>
+        Todos os textos
+      </a>
+
+      <h1>IA no trabalho de quem cria: onde ajuda e onde atrapalha</h1>
+
+      <p class="article-dek">
+        Testei durante 90 dias. O que mudou de verdade no meu processo, o que foi só hype e o
+        que eu parei de delegar para sempre.
+      </p>
+
+      <div class="article-meta">
+        <time datetime="2026-09-13">13 de setembro de 2026</time>
+        <span aria-hidden="true">&bull;</span>
+        <span>6 min de leitura</span>
+        <span aria-hidden="true">&bull;</span>
+        <span>Tecnologia</span>
+      </div>
+
+      <div class="cover">
+        <div class="cover-gradient" role="img" aria-label="Ilustração abstrata em tons de violeta e coral">
+          <span aria-hidden="true">&ldquo;</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="shell prose">
+      <p>
+        Passei 90 dias usando inteligência artificial em praticamente todas as etapas do meu
+        processo de criação. Escrevi usando, editei usando, pesquisei usando. Este texto é o
+        balanço honesto — sem hype e sem pânico.
+      </p>
+
+      <h2>Onde a IA realmente ajuda</h2>
+
+      <h3>1. Quebrar o branco da página</h3>
+
+      <p>
+        Meu maior problema nunca foi falta de ideias. Era a página em branco. Quando não sei
+        como começar um texto, peço cinco temas possíveis. Leio, odeio dois, e fico com o
+        ângulo que eu não tinha pensado. Isso economiza mais tempo do que qualquer ferramenta
+        de produtividade que já testei.
+      </p>
+
+      <h3>2. Corte e revisão</h3>
+
+      <p>
+        Mostrar um texto para a IA e perguntar o que está fraco, o que é redundante e o que
+        soa genérico funciona muito bem. Ela não tem rancor do meu ego. Já fiz isso com um
+        rascunho inteiro e ganhei em todos os pontos.
+      </p>
+
+      <blockquote>
+        A IA não sabe o que você quis dizer. Mas sabe muito bem quando o que você escreveu não
+        está dizendo.
+      </blockquote>
+
+      <h3>3. Pesquisa inicial</h3>
+
+      <p>
+        Para entender um assunto do zero em duas horas, em vez de duas semanas, não tem
+        substituto. Com as cautelas de sempre sobre verificar as fontes.
+      </p>
+
+      <h2>Onde a IA atrapalha</h2>
+
+      <h3>A voz</h3>
+
+      <p>
+        Este é o ponto em que a maioria dos blogs fica genérica. Texto gerado tem uma
+        assinatura invisível: é equilibrado demais. Não tem pico, não tem mau humor, não tem
+        aquela frase estranha que só você faria. Quando você lê vários textos de IA seguidos,
+        eles soam todos iguais. E é por isso que ninguém lembra o autor.
+      </p>
+
+      <h3>O atrito</h3>
+
+      <p>
+        Escrever com atrito é o que afina a voz. Tirar atrito demais é como malhar com peso
+        zero: o músculo não cresce. Nos dias em que deleguei um texto inteiro, meu trabalho
+        seguinte ficou fraco. Preciso escrever sozinho para ter o que delegar.
+      </p>
+
+      <h3>O sintoma do “parece que não é meu”</h3>
+
+      <p>
+        O meu sinal de alarme é simples: quando releio o texto e não reconheço nenhuma frase
+        minha, ele não vai ao ar. Não importa o quão bem escrito esteja.
+      </p>
+
+      <h2>O que eu parei de delegar</h2>
+
+      <ul>
+        <li>
+          <strong>O título e a primeira linha.</strong> É onde mora a promessa do texto. Se eu
+          não sei escrever isso, o texto não funciona.
+        </li>
+        <li>
+          <strong>O argumento central.</strong> Posso pesquisar, mas a conclusão é minha.
+        </li>
+        <li>
+          <strong>O humor.</strong> Ninguém automatizou isso ainda, e ninguém vai automatizar
+          o seu.
+        </li>
+        <li>
+          <strong>A edição final com gosto.</strong> É o meu leitor interno só.
+        </li>
+      </ul>
+
+      <h2>O que continua comigo</h2>
+
+      <ol>
+        <li>Ideias e ângulos para desbloquear o começo.</li>
+        <li>Revisão crítica honesta do rascunho.</li>
+        <li>Pesquisa inicial em assunto desconhecido.</li>
+        <li>Administração: formatação, revisão de português, nomes próprios.</li>
+      </ol>
+
+      <h2>O resumo honesto</h2>
+
+      <p>
+        A IA mudou o meu processo como a calculadora mudou o de quem calcula: mais rápido, mais
+        longe e — se você deixar — completamente outra pessoa. O melhor uso que encontrei é
+        como crítico, não como ghostwriter. Ela aponta o que está fraco. Quem escreve sou eu,
+        com todas as minhas imperfeições e o meu ritmo.
+      </p>
+
+      <p>
+        E olha: esta frase final eu escrevi sozinho, com raiva. Pelo menos eu gostei.
+      </p>
+    </div>
+
+    <div class="shell">
+      <div class="pull-quote">
+        <p>“Use a máquina para encontrar as falhas. Use você mesmo para escrever o texto.”</p>
+      </div>
+
+      <div class="share-row">
+        <span>Gostou? Compartilhe:</span>
+        <button class="btn btn-ghost" type="button" data-share>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M12 15V3M8 7l4-4 4 4"/>
+          </svg>
+          Compartilhar
+        </button>
+        <a class="btn btn-ghost" href="../index.html#posts">Ver outros textos</a>
+      </div>
+
+      <div class="author-box">
+        <img src="../assets/rodrigo-rezende.jpg" alt="" width="64" height="64" loading="lazy" decoding="async">
+        <div>
+          <strong>Rodrigo Rezende</strong>
+          <p>Escreve sobre vida, tecnologia e criatividade. Um texto por semana, sem enrolação.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="../index.html">
+          <img class="brand-mark" src="../assets/favicon.svg" alt="" width="34" height="34">
+          <span class="brand-text">Rodrigo Rezende<small>Blog semanal</small></span>
+        </a>
+        <p class="footer-about">
+          Um texto por semana sobre vida, tecnologia e criatividade. Escrito à mão, publicado com calma.
+        </p>
+      </div>
+      <nav class="footer-nav" aria-label="Navegação do rodapé">
+        <a href="../index.html#sobre">Sobre</a>
+        <a href="../index.html#posts">Posts</a>
+        <a href="../index.html#contato">Contato</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> Rodrigo Rezende. Todos os direitos reservados.</span>
+      <span>Feito com HTML, CSS e JavaScript. Hospedado no GitHub Pages.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="../script.js"></script>
+</body>
+</html>
