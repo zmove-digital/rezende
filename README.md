@@ -31,12 +31,12 @@ meu_blog/
 
 1. **Seu nome e perfil** — em `index.html`, troque `Rodrigo Rezende`, o texto de
    `hero-bio` e a seção "Sobre mim" (`about-body`) e os links de contato
-   (`linkedin.com/in/seuusuario` e `seuemail@exemplo.com`).
+   (`linkedin.com/in/rodrigorezende29343531` e `seuemail@exemplo.com`).
 2. **Seu logo** — em `assets/monograma-rr.webp` e `assets/monograma-rr.png` (fundo transparente).
 3. **Sua foto** — a imagem está em `assets/rodrigo-rezende.webp` e
    `assets/rodrigo-rezende.jpg` (600×600). Para trocar, gere as duas versões com o
    mesmo nome ou ajuste os caminhos no `<picture>` do `index.html`.
-3. **Cores** — tudo está tokenizado no topo de `styles.css`, em dois blocos: `:root`
+4. **Cores** — tudo está tokenizado no topo de `styles.css`, em dois blocos: `:root`
    (tema claro) e `[data-theme="dark"]` (tema escuro). O esquema atual é editorial:
    tinta sépia sobre papel, com **oxblood** (`--accent`) e **latão envelhecido**
    (`--accent-2`).
@@ -87,21 +87,30 @@ e acesse `http://localhost:8000`.
 
 ## Publicar no GitHub Pages
 
+O site já está no ar em **https://zmove-digital.github.io/rezende/**. Para republicar
+uma alteração:
+
 ```bash
 cd meu_blog
-git init
-git add .
+git add -A
 git commit -m "Publica o blog"
-git branch -M main
-git remote add origin https://github.com/SEUUSUARIO/SEUREPO.git
+git push
+```
+
+Para começar do zero em outro repositório:
+
+```bash
+git init -b main
+git remote add origin https://github.com/zmove-digital/rezende.git
 git push -u origin main
 ```
 
 Depois, no repositório: **Settings → Pages → Source: Deploy from a branch**,
-branch `main`, pasta `/(root)`. Em até um minuto o site fica no ar em:
+branch `main`, pasta `/(root)`. O arquivo `.nojekyll` na raiz impede que o Jekyll
+interfira no processamento. Em até um minuto o site fica no ar em:
 
 ```
-https://SEUUSUARIO.github.io/SEUREPO/
+https://zmove-digital.github.io/rezende/
 ```
 
 ## Usar um domínio próprio
@@ -112,7 +121,7 @@ https://SEUUSUARIO.github.io/SEUREPO/
    - `A` → `185.199.109.153`
    - `A` → `185.199.110.153`
    - `A` → `185.199.111.153`
-   - `CNAME` → `SEUUSUARIO.github.io`
+   - `CNAME` → `zmove-digital.github.io`
 3. No repositório, em **Settings → Pages**, marque **Enforce HTTPS**.
 
 ## Acessibilidade e SEO
