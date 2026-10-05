@@ -526,6 +526,21 @@ ol {
   margin-top: 0;
 }
 
+.about-body h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.6rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-variation-settings: "SOFT" 50, "WONK" 1;
+  color: var(--text);
+  margin-top: clamp(2.25rem, 4vw, 3rem);
+}
+
+.about-body h3 + p {
+  margin-top: 1rem;
+}
+
 .about-outro {
   padding-top: 1.3rem;
   border-top: 1px solid var(--border);
