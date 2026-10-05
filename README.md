@@ -15,6 +15,8 @@ meu_blog/
 ├── assets/
 │   ├── rodrigo-rezende.webp   foto de perfil (34 KB, formato moderno)
 │   ├── rodrigo-rezende.jpg    mesma foto em JPG (fallback, 49 KB)
+│   ├── monograma-rr.webp      logo do cabeçalho e rodapé (21 KB, com transparência)
+│   ├── monograma-rr.png       mesmo logo em PNG (fallback, 71 KB)
 │   └── favicon.svg            ícone do site
 ├── posts/              uma página HTML por texto
 │   ├── comecar-e-o-que-importa.html
@@ -28,13 +30,32 @@ meu_blog/
 ## Personalizar
 
 1. **Seu nome e perfil** — em `index.html`, troque `Rodrigo Rezende`, o texto de
-   `hero-bio` e os links das redes sociais (`github.com/seuusuario`, `linkedin.com/in/seuusuario`,
-   `instagram.com/seuusuario`, `seuemail@exemplo.com`).
-2. **Sua foto** — a imagem está em `assets/rodrigo-rezende.webp` e
+   `hero-bio` e a seção "Sobre mim" (`about-body`) e os links de contato
+   (`linkedin.com/in/seuusuario` e `seuemail@exemplo.com`).
+2. **Seu logo** — em `assets/monograma-rr.webp` e `assets/monograma-rr.png` (fundo transparente).
+3. **Sua foto** — a imagem está em `assets/rodrigo-rezende.webp` e
    `assets/rodrigo-rezende.jpg` (600×600). Para trocar, gere as duas versões com o
    mesmo nome ou ajuste os caminhos no `<picture>` do `index.html`.
-3. **Cores** — no topo de `styles.css`, troque `--accent` e `--accent-2`. Todo o resto
-   acompanha.
+3. **Cores** — tudo está tokenizado no topo de `styles.css`, em dois blocos: `:root`
+   (tema claro) e `[data-theme="dark"]` (tema escuro). O esquema atual é editorial:
+   tinta sépia sobre papel, com **oxblood** (`--accent`) e **latão envelhecido**
+   (`--accent-2`).
+
+   | Token | Claro | Escuro | Uso |
+   |---|---|---|---|
+   | `--bg` | `#f8f5ef` | `#131110` | fundo da página |
+   | `--bg-soft` | `#f0ebe1` | `#1a1715` | faixas alternadas |
+   | `--surface` | `#ffffff` | `#1e1b18` | cartões |
+   | `--text` | `#1b1916` | `#f3ede3` | texto principal |
+   | `--text-soft` | `#4b463e` | `#d2c9bd` | texto corrido |
+   | `--muted` | `#6f6659` | `#9e958a` | metadados |
+   | `--accent` | `#8c3a2b` | `#d18a75` | destaque principal |
+   | `--accent-2` | `#9a7428` | `#c6a05c` | destaque secundário |
+   | `--live` | `#4f7a45` | `#86ac74` | ponto pulsante |
+
+   Se trocar as cores, atualize também `<meta name="theme-color">` (nos 5 arquivos HTML) e
+   o degradê de `assets/favicon.svg`. Todos os gradientes do site leem `--accent` e
+   `--accent-2`, então mudam sozinhos.
 4. **Fontes** — os pares usados são:
    - `Fraunces` (títulos, headlines)
    - `Newsreader` (texto corrido dos posts)
