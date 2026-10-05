@@ -31,7 +31,7 @@ meu_blog/
 
 1. **Seu nome e perfil** — em `index.html`, troque `Rodrigo Rezende`, o texto de
    `hero-bio` e a seção "Sobre mim" (`about-body`) e os links de contato
-   (`linkedin.com/in/rodrigorezende29343531` e `seuemail@exemplo.com`).
+   (`linkedin.com/in/rodrigorezende29343531` e `rodrigorezende@ymail.com`).
 2. **Seu logo** — em `assets/monograma-rr.webp` e `assets/monograma-rr.png` (fundo transparente).
 3. **Sua foto** — a imagem está em `assets/rodrigo-rezende.webp` e
    `assets/rodrigo-rezende.jpg` (600×600). Para trocar, gere as duas versões com o
